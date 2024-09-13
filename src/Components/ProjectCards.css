@@ -39,6 +39,7 @@
         margin: 4vw auto;
         box-shadow: -2px -2px 5px grey, 2px 2px 5px grey;
         align-content: center;
+        text-align:center
     }
     .project-container{
         display: grid;

@@ -25,7 +25,9 @@
     .certificates-container{
         display: grid;
         grid-template-columns: repeat(1,auto);
-        text-align: center;
+        margin-left:0;
+        
+        
     }
 
     .individual-container{
@@ -35,6 +37,7 @@
         border-radius: 10px;
         border: #242424 1px;
         margin-top: 0;
+        margin-left:0;
         box-shadow: -2px -2px 5px grey, 2px 2px 5px grey;
     }
     
