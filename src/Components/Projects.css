@@ -1,0 +1,17 @@
+.project-title{
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 4vh;
+    color: white;
+}
+
+#projects{
+    background-color: rgba(16,16,16,.85);
+}
+
+@media screen and (max-width:960px){
+    .project-title{
+        text-align: center;
+        font-size: 5vw;
+    }   
+}

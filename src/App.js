@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import {BrowserRouter as Router} from 'react-router-dom';
+import Navbar from './Components/Navbar';
 import './App.css';
+import Home from './Components/Home';
+import Skills from './Components/Skills';
+import SignUp from './Components/SignUp';
+import Projects from './Components/Projects';
+import Experience from './Components/Experience';
+import { useState } from 'react';
+import { SignupContext } from './Contexts/SignupContext';
+import Certificates from './Components/Certificates';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+  const [signUp,setSignUp] = useState(false)
+  const [click,setClick] = useState(false)
+
+  return(
+    <>
+      <Router>
+        <SignupContext.Provider value={{signUp,setSignUp,click,setClick}}>
+          <SignUp />
+          <Navbar />
+          <Home/>
+          <Skills/>
+          <Projects />
+          <Experience />
+          <Certificates/>          
+        </SignupContext.Provider>
+      </Router>
+    </>
+  )
 }
 
-export default App;
+export default App
