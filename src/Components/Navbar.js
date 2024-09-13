@@ -87,6 +87,8 @@ function Navbar(){
             link: "#certificates",
             class:"nav-link",
         }
+
+
     ]
 
     const closeMobileMenu = ()=>{
@@ -107,6 +109,9 @@ function Navbar(){
 
                 <ul className={click?"nav-menu active":"nav-menu"}>
                     <NavbarCards data={navigation}></NavbarCards>
+                    <li className='nav-item-mobile'>
+                        <Button className='nav-links-mobile' buttonStyle='btn--outline' onClick={clickSubmit}>Contact Me</Button>
+                    </li>
                 </ul>
 
                 {button && <Button buttonStyle='btn--outline' onClick={clickSubmit}>Contact <span style={{color:'#ccb08a'}}>Me</span></Button>}
