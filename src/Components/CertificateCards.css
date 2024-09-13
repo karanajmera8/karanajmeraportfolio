@@ -24,9 +24,7 @@
 @media screen and (width<=960px) {
     .certificates-container{
         display: grid;
-        grid-template-columns: repeat(1,auto);
-        margin-left:0;
-        
+        grid-template-columns: repeat(1,auto);        
         
     }
 
