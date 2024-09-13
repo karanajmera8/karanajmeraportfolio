@@ -10,7 +10,7 @@ function Home(){
                 <p style={{color:'white'}}>I'm a full-stack developer with great experience and passion for coding! Professional with a Master's in Information Technology and experience of over 8 years in Technology</p>
             </div>
             <div className='profile-img-container'>
-                <img src={profilepic} className='profile-image'></img>
+                <img src={profilepic} alt="image of me" className='profile-image'></img>
             </div>
             <hr color='black'></hr>
         </div>
