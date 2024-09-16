@@ -13,9 +13,9 @@ export default function Skills() {
         <div className='front-end-card'>
           <GoTerminal className='front-icon'/>
           <h2>Front-end Developer</h2>
-          <p>Skilled Front-end Developer with 4 years of experience in designing, developing and maintaining front-end web applications. Achieved measurable success in increasing page load speeds by 20% which lead to an increase in website conversion rates.</p>
+          <p className = 'skill-summary' >Skilled Front-end Developer with 4 years of experience in designing, developing and maintaining front-end web applications. Achieved measurable success in increasing page load speeds by 20% which lead to an increase in website conversion rates.</p>
           <h3>Technology Stack</h3>
-          <p>HTML, CSS, JavaScript</p>
+          <p className = 'languages'>HTML, CSS, JavaScript</p>
           <h3>My Tools</h3>
           <ul>
             <li className='list-items'>BootStrap</li>
@@ -28,9 +28,9 @@ export default function Skills() {
         <div className='back-end-card'>
           <FaServer className='server-icon'/>
           <h2>Back-end Developer</h2>
-          <p>Develop business logic and back-end system to support the product, create API, have vast experience with version control systems.</p>
+          <p className = 'skill-summary' >Develop business logic and back-end system to support the product, create API, have vast experience with version control systems.</p>
           <h3>Languages</h3>
-          <p>Python, SQL, C++, JavaScript</p>
+          <p className = 'languages'>Python, SQL, C++, JavaScript</p>
           <h3>My Tools</h3>
           <ul>
             <li className='list-items'>MySQL</li>

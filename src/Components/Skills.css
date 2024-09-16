@@ -23,13 +23,13 @@
 
 .server-icon{
     font-size: 4vw;
-    margin-top: 2vw;
+    margin-top: 4vw;
     color: blue;
 }
 
 .front-icon{
     font-size: 4vw;
-    margin-top: 2vw;
+    margin-top: 4vw;
     color: blue;
 }
 
@@ -40,12 +40,17 @@
 
 .front-end-card>h3, .back-end-card>h3{
     text-align: center;
-    margin: 5% 2vw;
+    margin: 3% 2vw;
 }
 
-.front-end-card>p, .back-end-card>p{
+.languages{
     text-align: center;
-    margin: 5% 2vw;
+    margin: 2% 2vw;
+}
+
+.skill-summary{
+    text-align: justify;
+    margin: 2% 2vw;
 }
 
 .list-items{
@@ -58,7 +63,7 @@
     background-color: rgba(16,16,16,.85);
 }
 
-@media screen and (max-width:960px) {
+@media screen and (width<=960px) {
     .card-container{
         display: flex;
         flex-direction: column;
@@ -86,26 +91,35 @@
     }
 
     .server-icon, .front-icon{
-        font-size: 20vw;
+        font-size: 5rem;
         justify-content: center;
-        margin-top: 2vh;
         color: blue;
     }
     
     
     .card-container>h2{
         text-align: center;
-        margin: 2vh auto;
+        margin: 2% auto;
     }
     
-    .card-container>h3,.card-container>p{
+    .card-container>h3{
         text-align: center;
-        margin: 2vh 2vw;
+        margin: 2% 2%;
     }
     
     .list-items{
         text-align: center;
         list-style: none;
-        margin: 2vh auto;
+        margin: 2% auto;
+    }
+
+    .languages{
+        text-align: center;
+        margin: 2% 2vw;
+    }
+    
+    .skill-summary{
+        text-align: justify;
+        margin: 2% 2vw;
     }
 }
