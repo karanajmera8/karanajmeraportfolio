@@ -2,6 +2,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 
 .detail-container{
@@ -12,7 +13,10 @@
     margin: 4vw auto;
     box-shadow: -2px -2px 5px grey, 2px 2px 5px grey;
     align-content: center;
+    
+
 }
+
 
 .project-title{
     margin: auto auto;
@@ -29,8 +33,7 @@
     display: grid;
     grid-template-columns: repeat(2,auto);
     align-content: space-around;
-    
-}
+ }
 
 
 

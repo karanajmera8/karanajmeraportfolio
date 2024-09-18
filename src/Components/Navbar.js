@@ -44,16 +44,18 @@ function Navbar(){
     }
 
     const socialIcons = [
-        {
-          title: <FaGithub />,
-          link: "https://github.com/karanajmera8",
-          class:"navbar-logo"
+        { 
+            id:'git-hub',
+            title: <FaGithub />,
+            link: "https://github.com/karanajmera8",
+            class:"navbar-logo"
         },
 
         {
-          title: <IoLogoLinkedin />,
-          link: "https://www.linkedin.com/in/karanajmera",
-          class:"navbar-logo"
+            id:'linkedin',
+            title: <IoLogoLinkedin />,
+            link: "https://www.linkedin.com/in/karanajmera",
+            class:"navbar-logo"
         },
     ]
 
@@ -109,7 +111,7 @@ function Navbar(){
 
                 <ul className={click?"nav-menu active":"nav-menu"}>
                     <NavbarCards data={navigation}></NavbarCards>
-                    <li className='nav-item-mobile'>
+                    <li key='contact-me' className='nav-item-mobile'>
                         <Button className='nav-links-mobile' buttonStyle='btn--outline' onClick={clickSubmit}>Contact Me</Button>
                     </li>
                 </ul>

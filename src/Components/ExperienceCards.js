@@ -4,7 +4,7 @@ import './ExperienceCards.css'
 function ExperienceCards(props) {
   const experiences = props.data.map((experience)=>{
     return(
-        <>
+        <section key={experience.title}>
             <div className='experience-container'>
                 <div className='date-container'>
                     {experience.year}
@@ -14,7 +14,7 @@ function ExperienceCards(props) {
                     <p className='experience-description'>{experience.description}</p>
                 </div>
             </div>
-        </>
+        </section>
     )
   })
     return (

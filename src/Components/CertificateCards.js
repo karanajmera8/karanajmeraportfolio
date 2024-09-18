@@ -4,7 +4,7 @@ import './CertificateCards.css'
 function CertificateCards(props) {
     const certificates = props.data.map((certificate)=>{
         return(
-            <>
+            <section key={certificate.title}>
                 <div className='individual-container'>
                     <p className='front-icon'>{certificate.icon}</p>
                     <h1>{certificate.title}</h1>
@@ -12,7 +12,7 @@ function CertificateCards(props) {
                     <h2>{certificate.provider}</h2>
                     <p>{certificate.date}</p>
                 </div>
-            </>
+            </section>
         )
     })
   return (

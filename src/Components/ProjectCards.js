@@ -4,12 +4,13 @@ import './ProjectCards.css'
 function ProjectCards(props) {
   const projectList = props.data.map((projectItem)=>{
     return((projectItem.context===true)?(
-      <div className='detail-container' onMouseLeave={()=>{projectItem.contextChange(false)}}>
-        <h2 className='project-title'>{projectItem.title}</h2>
-        <p className='project-description'>{projectItem.description}</p>
+      <div key={projectItem.title} className='detail-container back-side'  onMouseLeave={()=>{projectItem.contextChange(false)}}>
+        <h2 key={projectItem.title} className='project-title'>{projectItem.title}</h2>
+        <p key={projectItem.title} className='project-description'>{projectItem.description}</p>
       </div>
     ):(
-      <div 
+      <div
+        key={projectItem.title} 
         className= 'detail-container image-container' 
         style={{backgroundImage:`url(${projectItem.image})`}} 
         onMouseEnter={()=>{projectItem.contextChange(true)}}

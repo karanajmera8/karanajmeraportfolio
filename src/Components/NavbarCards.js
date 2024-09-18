@@ -11,10 +11,10 @@ function NavbarCards(props) {
 
   const social = props.data.map((icons)=>{
       return(icons.class==="navbar-logo")?(
-          <a href={icons.link} className={icons.class}>{icons.title}</a>
+          <a key={icons.id} href={icons.link} className={icons.class}>{icons.title}</a>
       ):(
-      <li className="nav-item">
-        <HashLink to={icons.link} className={icons.class} onClick={closeMobileMenu}>{icons.title}</HashLink >
+      <li key={icons.title} className="nav-item">
+        <HashLink key={icons.title} to={icons.link} className={icons.class} onClick={closeMobileMenu}>{icons.title}</HashLink >
       </li>
     )
   })    
