@@ -9,10 +9,11 @@
 }
 .summary{
     display: flex;
-    margin-top: 40vh;
+    margin-top: 30vh;
     flex-direction: column;
     align-content:center;
     text-align: center;
+    
 }
 
 .summary>h2{
@@ -21,8 +22,17 @@
 
 .profile-image{
     height: 90vh;
+    border: none;
 }
 
+.profile-img-container{
+    width: 100%;
+    
+}
+
+.resume-button{
+    margin-top: 10%;
+}
 @media screen and (width<=960px) {
     .home-container{
         display: flex;

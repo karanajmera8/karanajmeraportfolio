@@ -13,11 +13,14 @@ import Certificates from './Components/Certificates';
 function App(){
   const [signUp,setSignUp] = useState(false)
   const [click,setClick] = useState(false)
-
+  const [projectTitle1,setProjectTitle1] = useState(false)
+  const [projectTitle2,setProjectTitle2] = useState(false)
+  const [projectTitle3,setProjectTitle3] = useState(false)
+  const [projectTitle4,setProjectTitle4] = useState(false)
   return(
     <>
       <Router>
-        <SignupContext.Provider value={{signUp,setSignUp,click,setClick}}>
+        <SignupContext.Provider value={{signUp,setSignUp,click,setClick,projectTitle1,setProjectTitle1,projectTitle2,setProjectTitle2,projectTitle3,setProjectTitle3,projectTitle4,setProjectTitle4}}>
           <SignUp />
           <Navbar />
           <Home/>

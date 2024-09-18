@@ -29,7 +29,10 @@
     display: grid;
     grid-template-columns: repeat(2,auto);
     align-content: space-around;
+    
 }
+
+
 
 @media screen and (max-width:960px) {
     .detail-container{
