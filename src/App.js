@@ -9,6 +9,8 @@ import Experience from './Components/Experience';
 import { useState } from 'react';
 import { SignupContext } from './Contexts/SignupContext';
 import Certificates from './Components/Certificates';
+import AboutMe from './Components/AboutMe';
+
 
 function App(){
   const [signUp,setSignUp] = useState(false)
@@ -24,6 +26,7 @@ function App(){
           <SignUp />
           <Navbar />
           <Home/>
+          <AboutMe/>
           <Skills/>
           <Projects />
           <Experience />

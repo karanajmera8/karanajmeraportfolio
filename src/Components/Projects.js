@@ -17,7 +17,7 @@ function Projects() {
   const projects = [
     {
       title:'E-Commerce Website',
-      description:'Designed and implemented a functional e-commerce website using Django framework',
+      description:'Developed and deployed a full-stack website with Django for backend, ensuring scalability and robust performance.',
       image:websitePicture,
       context:projectTitle1,
       contextChange:setProjectTitle1
@@ -49,7 +49,7 @@ function Projects() {
   return (
     <section id='projects'>
       <h2 className='project-title' style={{fontSize:'60px'}}>Projects</h2>
-      <p style={{textAlign:'center',color:'white'}}>Have a look at some of the projects I'm proud of:</p>
+      <p style={{textAlign:'center',color:'white',marginTop:'10px',fontSize:'25px'}}>Have a look at some of the projects I'm proud of:</p>
       
       <ProjectCards data={projects}/>
       <BackTop />

@@ -62,7 +62,7 @@ function Navbar(){
     const navigation=[
         {
             title: "About Me",
-            link: "/",
+            link: "#about-me",
             class:"nav-link",
         },
 

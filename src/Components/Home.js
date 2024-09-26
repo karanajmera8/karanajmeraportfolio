@@ -1,7 +1,8 @@
 import React from 'react'
 import './Home.css'
-import profilepic from '../Images/profilepic.jpg'
+import profilepic from '../Assets/comp.png'
 import { Button } from './Button'
+import { Typewriter } from 'react-simple-typewriter';
 
 function Home(){
     const resumeOnClick = ()=>{
@@ -16,14 +17,14 @@ function Home(){
     return(
         <>
             <div className='home-container'>
-                <div className='summary'>
-                    <h2 style={{color:'white'}}>Karan <span style={{color:'#ccb08a'}}>Ajmera</span></h2>
-                    <p style={{color:'white'}}>I'm a full-stack developer with great experience and passion for coding! Professional with a Master's in Information Technology and experience of over 8 years in Technology</p>
-                    <div className='resume-button'>
-                        <Button buttonStyle='btn--outline' onClick={resumeOnClick}>
-                            Download Resume
-                        </Button>
-                    </div>
+                <div className='home-info'>
+                    <h2 style={{color:'white'}}>Hi, I am</h2>
+                    <h2 style={{color:'#ccb08a'}}>Karan.</h2>
+                    <p style={{color:'white',fontSize:'30px'}}>I am a
+                        <span style={{color:'#ccb08a',fontSize:'50px'}}>
+                            <Typewriter words={[' Full Stack Developer.', ' LeetCode enthusiast.', ' Software Engineer.']} loop={0} cursor cursorStyle='_' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
+                        </span>
+                    </p>
                 </div>
                 <div className='profile-img-container'>
                     <img src={profilepic} alt="image of me" className='profile-image'></img>

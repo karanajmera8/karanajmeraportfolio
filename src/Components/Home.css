@@ -5,33 +5,39 @@
     height: 100%;
     grid-template-columns: repeat(2,auto);
     align-items: left;
-        
+
 }
-.summary{
+.home-info{
     display: flex;
-    margin-top: 30vh;
+    margin-top: 20vh;
     flex-direction: column;
     align-content:center;
     text-align: center;
-    
+    width: 50vw;
+
 }
 
-.summary>h2{
+.home-info>h2{
     font-size: 100px;
+    text-align: center;
+}
+
+.summary{
+    text-align: justify;
+    margin: 0 2%;
 }
 
 .profile-image{
-    height: 90vh;
+    overflow-clip-margin: content-box;
+    overflow: clip;
     border: none;
+
 }
 
 .profile-img-container{
     width: 100%;
-    
-}
-
-.resume-button{
-    margin-top: 10%;
+    height: 90vh;
+    align-content: center;
 }
 
 @media screen and (width<=960px) {

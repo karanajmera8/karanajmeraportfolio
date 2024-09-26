@@ -12,9 +12,15 @@ function Experience() {
     },
 
     {
-      title:"Software Engineer Volunteer Fly-Paper Tutors",
+      title:"Software Engineer Volunteer at Fly-Paper Tutors",
       year:"2020-2020",
       description:"Contributed to full-stack development of a new platform for providing free tutoring to high-school students"
+    },
+
+    {
+      title:"Software Engineer Intern at Rajkamal Barscans",
+      year:"2013-2014",
+      description:"Contributed to development of robust, scalable web application using Django"
     },
 
     {
@@ -27,6 +33,11 @@ function Experience() {
       title:"University of Maryland",
       year:"2014-2016",
       description:"Master of Science in Telecommunications Engineering"
+    },
+    {
+      title:"Veermata Jijabai Technology Institute",
+      year:"2010-2014",
+      description:"Bachelor of Science in Electronic Engineering"
     }    
     
   ]
