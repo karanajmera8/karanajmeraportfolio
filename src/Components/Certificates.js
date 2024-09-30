@@ -1,9 +1,7 @@
 import React from 'react'
-import PageTitle from './PageTitle'
 import { FaReact,FaPython } from "react-icons/fa";
 import { MdManageAccounts } from "react-icons/md";
 import CertificateCards from './CertificateCards';
-import './Certificates.css'
 import BackTop from './BackTop';
 
 function Certificates() {
@@ -39,7 +37,7 @@ function Certificates() {
 
   return (
     <section id='certificates'>
-      <PageTitle>Certificates</PageTitle>
+      <h2 className='about-title' style={{fontSize:'100px'}}>Skills</h2>
       <CertificateCards data={certificate}></CertificateCards>
       <BackTop />
       <hr color='black'></hr>

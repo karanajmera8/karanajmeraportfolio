@@ -1,6 +1,5 @@
 import React from 'react'
 import ExperienceCards from './ExperienceCards'
-import './Experience.css'
 import BackTop from './BackTop'
 
 function Experience() {
@@ -43,7 +42,7 @@ function Experience() {
   ]
   return (
     <section id='experience'>
-      <h2 style={{textAlign:'center', font:'Times New Roman',fontSize:'60px',color:'#ccb08a'}}>Experience</h2>
+      <h2 className='header' style={{textAlign:'center', font:'Times New Roman',color:'#ccb08a'}}>Experience</h2>
       <ExperienceCards data={experience}/>
       <BackTop />
       <hr color='black'></hr>

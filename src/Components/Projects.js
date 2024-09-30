@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import './Projects.css'
 import websitePicture from '../Images/WebsiteTemplate.jpg'
 import ProjectCards from './ProjectCards'
 import dbmsPicture from '../Images/dbms.png'
@@ -48,8 +47,8 @@ function Projects() {
 
   return (
     <section id='projects'>
-      <h2 className='project-title' style={{fontSize:'60px'}}>Projects</h2>
-      <p style={{textAlign:'center',color:'white',marginTop:'10px',fontSize:'25px'}}>Have a look at some of the projects I'm proud of:</p>
+      <h2 className='project-title' style={{fontSize:'100px'}}>Projects</h2>
+      <p style={{textAlign:'center',color:'white',marginTop:'10px',fontSize:'40px'}}>Have a look at some of the projects I'm proud of:</p>
       
       <ProjectCards data={projects}/>
       <BackTop />

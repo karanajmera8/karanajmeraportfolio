@@ -1,5 +1,4 @@
 import React from 'react'
-import './CertificateCards.css'
 
 function CertificateCards(props) {
     const certificates = props.data.map((certificate)=>{

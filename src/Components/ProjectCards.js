@@ -1,5 +1,4 @@
 import {React,useState} from 'react'
-import './ProjectCards.css'
 
 function ProjectCards(props) {
   const projectList = props.data.map((projectItem)=>{

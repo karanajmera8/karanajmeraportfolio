@@ -1,43 +1,27 @@
 import React from 'react';
-import './Skills.css';
-import { FaServer } from "react-icons/fa";
-import { GoTerminal } from "react-icons/go";
 import BackTop from './BackTop';
-import PageTitle from './PageTitle';
+import { languages, frameworks} from '../Constants/Constants';
+import './Bounce.css'
 
 export default function Skills() {
   return (
     <section id='skills'>
-      <PageTitle>Skills</PageTitle>
-      <div className='card-container'>
-        <div className='front-end-card'>
-          <GoTerminal className='front-icon'/>
-          <h2>Front-end Developer</h2>
-          <p className = 'skill-summary' >Skilled Front-end Developer with 4 years of experience in designing, developing and maintaining front-end web applications. Achieved measurable success in increasing page load speeds by 20% which lead to an increase in website conversion rates.</p>
-          <h3>Technology Stack</h3>
-          <p className = 'languages'>HTML, CSS, JavaScript</p>
-          <h3>My Tools</h3>
-          <ul>
-            <li className='list-items'>BootStrap</li>
-            <li className='list-items'>React</li>
-            <li className='list-items'>GitHub</li>
-            <li className='list-items'>VSCode</li>
-          </ul>
-        </div>
-
-        <div className='back-end-card'>
-          <FaServer className='server-icon'/>
-          <h2>Back-end Developer</h2>
-          <p className = 'skill-summary' >Develop business logic and back-end system to support the product, create API, have vast experience with version control systems.</p>
-          <h3>Languages</h3>
-          <p className = 'languages'>Python, SQL, C++, JavaScript</p>
-          <h3>My Tools</h3>
-          <ul>
-            <li className='list-items'>MySQL</li>
-            <li className='list-items'>Django</li>
-            <li className='list-items'>Docker</li>
-          </ul>
-        </div>
+      <h2 className='about-title' style={{fontSize:'100px'}}>Skills</h2>
+      <p style={{textAlign:'center',color:'white',marginTop:'10px',fontSize:'40px'}}>Technical Languages</p>
+      <div className='flex flex-row flex-wrap justify-center gap-6 md:gap-16 my-10 w-full'>
+          {languages.map((language, index) => (
+              <div key={index} className={`sphere mud-gradient flex items-center justify-center rounded-full p-4`}>
+                  <img title={language.title} src={language.icon} alt={language.title} className='skill-images' />
+              </div>
+          ))}
+      </div>
+      <p style={{textAlign:'center',color:'white',marginTop:'80px',fontSize:'40px'}}>Technologies and Frameworks</p>
+      <div className='flex flex-row flex-wrap justify-center gap-6 md:gap-16 my-10 w-full'>
+          {frameworks.map((framework, index) => (
+              <div key={index} className={`sphere mud-gradient flex items-center justify-center rounded-full p-4`}>
+                  <img title={framework.title} src={framework.icon} alt={framework.title} className='skill-images' />
+              </div>
+          ))}
       </div>
 
       <BackTop />

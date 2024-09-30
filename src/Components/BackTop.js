@@ -1,5 +1,4 @@
 import React from 'react'
-import './BackTop.css'
 import { HashLink as Link} from 'react-router-hash-link'
 
 function BackTop() {

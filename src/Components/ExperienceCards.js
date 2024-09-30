@@ -1,5 +1,4 @@
 import React from 'react'
-import './ExperienceCards.css'
 
 function ExperienceCards(props) {
   const experiences = props.data.map((experience)=>{

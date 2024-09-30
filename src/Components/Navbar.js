@@ -1,7 +1,6 @@
 import {useState, useEffect, useContext} from 'react'
 import { TfiMenu, TfiClose } from "react-icons/tfi";
 import { Button } from "./Button";
-import './Navbar.css';
 import { HashLink } from "react-router-hash-link";
 import { SignupContext } from '../Contexts/SignupContext';
 import { IoLogoLinkedin } from "react-icons/io";
