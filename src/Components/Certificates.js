@@ -37,7 +37,7 @@ function Certificates() {
 
   return (
     <section id='certificates'>
-      <h2 className='about-title' style={{fontSize:'100px'}}>Skills</h2>
+      <h2 className='about-title' style={{fontSize:'100px'}}>Certificates</h2>
       <CertificateCards data={certificate}></CertificateCards>
       <BackTop />
       <hr color='black'></hr>
