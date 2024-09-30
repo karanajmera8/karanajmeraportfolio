@@ -1,5 +1,4 @@
 import React, { useState, useContext, useRef } from 'react'
-import './SignUp.css'
 import { SignupContext } from '../Contexts/SignupContext';
 import { Button } from './Button';
 import emailjs from '@emailjs/browser';
