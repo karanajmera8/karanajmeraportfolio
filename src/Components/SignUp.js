@@ -31,6 +31,8 @@ function SignUp() {
       setFullName('');
       setEmail('');
       setNote('');
+
+      alert("Thank you for your email! I will get back to you ASAP!")
     }
     
   return (signUp)?(
